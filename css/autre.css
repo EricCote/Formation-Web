@@ -1,0 +1,51 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: bisque;
+}
+h1 {
+  font-weight: 300;
+  background: radial-gradient(cornflowerblue, blue);
+  /* background-image: url("hockey.jpg");
+  background-size: cover; */
+  /* border: 2px solid blueviolet;
+  border-style: solid;
+  border-width: 0px;
+  border-color: blueviolet; */
+  padding: 10px;
+  text-align: center;
+  box-shadow: grey 10px 10px 10px;
+}
+
+nav {
+  background-color: blueviolet;
+  margin-bottom: 10px;
+}
+
+nav ul {
+  height: 1.5em;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.rouge {
+  color: red;
+}
+p.bleu {
+  color: blue;
+}
+#vert {
+  color: green;
+}
+img {
+  margin-right: 10px;
+}
