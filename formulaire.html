@@ -11,36 +11,77 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <!-- <link
       href="https://bootswatch.com/5/quartz/bootstrap.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     /> -->
+    <style>
+      .anim {
+        animation-name: fadeInDown;
+        animation-duration: 1s;
+        animation-fill-mode: both;
+        position: relative;
+        color: rgba(0, 255, 0, 0);
+      }
+
+      .col-md-6:nth-child(1) {
+        animation-name: bounceInDown;
+        animation-delay: 0.5s;
+      }
+
+      .col-md-6:nth-child(2) {
+        animation-name: lightSpeedInRight;
+        animation-delay: 1s;
+      }
+
+      /* @keyframes versgauche {
+        0% {
+          opacity: 0;
+          left: 25vw;
+        }
+
+        100% {
+          opacity: 1;
+          left: 0vw;
+        }
+      } */
+    </style>
   </head>
   <body>
     <div class="container">
-      <h1 class="display-2 mt-5">Infolettre</h1>
+      <h1 class="display-2 mt-5 anim">Infolettre</h1>
       <p>Inscrivez-vous à l'infolettre</p>
       <form action="https://httpbin.org/post" method="post">
-        <div class="mb-3 form-floating">
-          <input
-            type="text"
-            name="nom"
-            id="nom"
-            class="form-control"
-            placeholder="Nom"
-          />
-          <label for="nom">Nom</label>
-        </div>
-        <div class="mb-3 form-floating">
-          <input
-            type="email"
-            name="email"
-            id="email"
-            class="form-control"
-            placeholder="Courriel"
-          />
-          <label for="email">Courriel</label>
+        <div class="row">
+          <div class="col-md-6 col-lg-8 anim">
+            <div class="mb-3 form-floating">
+              <input
+                type="text"
+                name="nom"
+                id="nom"
+                class="form-control"
+                placeholder="Nom"
+              />
+              <label for="nom">Nom</label>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-4 anim">
+            <div class="mb-3 form-floating">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form-control"
+                placeholder="Courriel"
+              />
+              <label for="email">Courriel</label>
+            </div>
+          </div>
         </div>
         <div class="form-check mb-3">
           <input class="form-check-input" type="checkbox" id="vip" name="vip" />
